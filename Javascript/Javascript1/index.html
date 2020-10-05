@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML dynamic table using JavaScript</title>
+    <script type="text/javascript" src="script.js"></script>
+    <style>
+        .mytable {
+            width: 15%;
+            margin: 0px auto;
+            border-collapse: separate;
+            border-spacing: 30px 20px;
+        }
+    </style>
+</head>
+<body align="center">
+
+    <div id="myform">
+        <table class="mytable">
+            <h1>Event Billing</h1>
+            <tr>
+                <td style="float:left">ID</td>
+                <td><input type="text" id="id"></td>
+            </tr>
+            <tr>
+                <td style="float:left">Name</td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td style="float:left">Price</td>
+                <td><input type="text" id="price"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="float:left"><input type="button" id="add" value="Add to cart" onclick="Javascript:addRow()"
+                        onclick="Javascript:update()">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="mydata">
+        <table id="myTableData" border="1" cellpadding="2" align="center">
+            <tr id="table-row">
+                <td><b>ID</b></td>
+                <td><b>Product Name</b></td>
+                <td><b>Price</b></td>
+                <td><b>Quantity</b></td>
+                <td><b>Remove from the cart</b></td>
+            </tr>
+        </table>
+        &nbsp;<br />
+    </div>
+    <div id="Result"></div>
+    <p id="demo"></p>
+</body>
+</html>

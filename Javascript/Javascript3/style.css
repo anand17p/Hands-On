@@ -1,0 +1,23 @@
+.form-controls{
+    width: 28%;
+    margin:  auto;
+    text-align: center;
+}
+.form-control{
+    margin: 10px 0px;
+}
+.form-control input{
+    width: 50%;
+}
+.form-label{
+    font-weight: 500;
+    font-size: large;
+    float:left;
+    display:block;   
+    
+}
+.btn-controls
+{
+    float: right;
+    
+}
