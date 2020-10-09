@@ -1,0 +1,89 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Register</title>
+<script> 
+function validate()
+{ 
+  var eventname = document.form.eventname.value;
+  var hallname = document.form.hallname.value;
+  var details = document.form.details.value; 
+  var owner = document.form.owner.value;
+  var startdate= document.form.startdate.value;
+  var enddate= document.form.enddate.value;
+  
+  if (eventname==null || eventname=="")
+  { 
+  alert("Event Name can't be blank"); 
+  return false; 
+  }
+  else if (hallname==null || hallname=="")
+  { 
+  alert("Hall Name can't be blank"); 
+  return false; 
+  }
+  else if (details==null || details=="")
+  { 
+  alert("Details can't be blank"); 
+  return false; 
+  }
+  else if(owner ==null || owner =="")
+  { 
+  alert("Owner can't be blank"); 
+  return false; 
+  } 
+  else if (startdate==null || startdate=="")
+  { 
+  alert("Start Date can't be blank"); 
+  return false; 
+  } 
+  else if (enddate==null || enddate=="")
+  { 
+  alert("End Date can't be blank"); 
+  return false; 
+  }
+ } 
+</script> 
+</head>
+<body>
+<h2 style="color:green;'" align="center">Event Creation </h2>
+ <form name="form" action="Register" method="post" onsubmit="return validate()">
+  <table align="center">
+   <tr>
+   <td>Event Name</td>
+   <td><input type="text" name="eventname" /></td>
+   </tr>
+   <tr>
+   <td>Hall Name</td>
+   <td><input type="text" name="hallname" /></td>
+   </tr>
+   <tr>
+   <td>Event Type</td>
+   <td><input type="radio" name="exibition" />Exibition</td><br/>
+   <td><input type="radio" name="stageshow" />StageShow</td>
+   </tr>
+   <tr>
+   <td>Details</td>
+   <td><input type="text" name="details" /></td>
+   </tr>
+   <tr>
+   <td>Owner</td>
+   <td><input type="text" name="owner" /></td>
+   </tr>
+   <tr>
+    <tr>
+   <td>Start Date</td>
+   <td><input type="text" name="startdate" /></td>
+   </tr>
+   <tr>
+    <tr>
+   <td>End Date</td>
+   <td><input type="text" name="enddate" /></td>
+   </tr>
+   <tr>
+   <td><input type="submit" value="Register"></input></td>
+   </tr>
+  </table>
+ </form>
+</body>
+</html>
