@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="user" class="com.hcl.User">
+		<property name="name" value="Jegan" />
+		<property name="age" value="21"/>
+		<property name="city" value="Chennai" />
+		<property name="order" ref="orderOne">
+		</property>
+	</bean>
+	<bean id="orderOne" class="com.hcl.Order">
+		<property name="itemName" value="item1" />
+		<property name="price" value="230.7" />
+	</bean>
+	<bean id="orderTwo" class="com.hcl.Order">
+		<property name="itemName" value="item2" />
+		<property name="price" value="230.7" />
+	</bean>
+
+</beans>
